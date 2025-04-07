@@ -1402,5 +1402,32 @@ function deleteSchedule(scheduleId) {
     updateSchedulesDisplay();
 }
     </script>
+<ul id="lista-attivita"></ul>
+
+<script>
+function aggiungiAttivita() {
+  const nuovaAttivita = prompt("Inserisci una nuova attività:");
+  if (nuovaAttivita) {
+    const lista = document.getElementById("lista-attivita");
+    const nuovoElemento = document.createElement("li");
+    nuovoElemento.textContent = nuovaAttivita;
+    lista.appendChild(nuovoElemento);
+  }
+}
+
+function setLanguage(lang) {
+  const elementiIt = document.querySelectorAll('.lang-it');
+  const elementiEn = document.querySelectorAll('.lang-en');
+
+  if (lang === 'it') {
+    elementiIt.forEach(el => el.style.display = 'inline');
+    elementiEn.forEach(el => el.style.display = 'none');
+  } else {
+    elementiIt.forEach(el => el.style.display = 'none');
+    elementiEn.forEach(el => el.style.display = 'inline');
+  }
+}
+</script>
+
 </body>
 </html>
