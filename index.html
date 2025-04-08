@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Schedule Planner</title>
+    <title>Daily Schedule Planner with Task Management</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
     <style>
@@ -41,7 +41,7 @@ body {
 }
 
 .flag-en {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjM1IDY1MCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KPGRlZnM+DQo8ZyBpZD0idW5pb24iPg0KPHVzZSB5PSItLjIxNiIgeGxpbms6aHJlZj0iI3g0Ii8+DQo8dXNlIHhsaW5rOmhyZWY9IiN4NCIvPg0KPHVzZSB5PSIuMjE2IiB4bGluazpocmVmPSIjczYiLz4NCjwvZz4NCjxnIGlkPSJ4NCI+DQo8dXNlIHhsaW5rOmhyZWY9IiNzNiIvPg0KPHVzZSB5PSIuMDU0IiB4bGluazpocmVmPSIjczUiLz4NCjx1c2UgeT0iLjEwOCIgeGxpbms6aHJlZj0iI3M2Ii8+DQo8dXNlIHk9Ii4xNjIiIHhsaW5rOmhyZWY9IiNzNSIvPg0KPC9nPg0KPGcgaWQ9InM1Ij4NCjx1c2UgeD0iLS4yNTIiIHhsaW5rOmhyZWY9IiNzdGFyIi8+DQo8dXNlIHg9Ii0uMTI2IiB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4PSIuMTI2IiB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4PSIuMjUyIiB4bGluazpocmVmPSIjc3RhciIvPg0KPC9nPg0KPGcgaWQ9InM2Ij4NCjx1c2UgeD0iLS4wNjMiIHhsaW5rOmhyZWY9IiNzNSIvPg0KPHVzZSB4PSIuMzE1IiB4bGluazpocmVmPSIjc3RhciIvPg0KPC9nPg0KPGcgaWQ9InN0YXIiPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0ibWF0cml4KC0uODA5MDIgLS41ODc3OSAuNTg3NzkgLS44MDkwMiAwIDApIi8+DQo8dXNlIHhsaW5rOmhyZWY9IiNwdCIgdHJhbnNmb3JtPSJtYXRyaXgoLjMwOTAyIC0uOTUxMDYgLjk1MTA2IC4zMDkwMiAwIDApIi8+DQo8dXNlIHhsaW5rOmhyZWY9IiNwdCIvPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0icm90YXRlKDE0NCkiLz4NCjwvZz4NCjxwYXRoIGZpbGw9IiNmZmYiIGlkPSJwdCIgZD0iTS0uMTYyNSwwIDAtLjUgLjE2MjUsMHoiIHRyYW5zZm9ybT0ic2NhbGUoLjA2MTYpIi8+DQo8cGF0aCBmaWxsPSIjYmYwYTMwIiBpZD0ic3RyaXBlIiBkPSJtMCwwaDEyMzV2NTBoLTEyMzV6Ii8+DQo8L2RlZnM+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJtMCwwaC0xMjM1djY1MGgtMTIzNXoiLz4NCjx1c2UgeGxpbms6aHJlZj0iI3N0cmlwZSIvPg0KPHVzZSB5PSIxMDAiIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjx1c2UgeT0iMjAwIiB4bGluazpocmVmPSIjc3RyaXBlIi8+DQo8dXNlIHk9IjMwMCIgeGxpbms6aHJlZj0iI3N0cmlwZSIvPg0KPHVzZSB5PSI0MDAiIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjx1c2UgeT0iNTAwIiB4bGluazpocmVmPSIjc3RyaXBlIi8+DQo8dXNlIHk9IjYwMCIgeGxpbms6aHJlZj0iI3N0cmlwZSIvPg0KPHBhdGggZmlsbD0iIzAwMjg2OCIgZD0ibTAsMGg0OTR2MzUwaC00OTR6Ii8+DQo8dXNlIHhsaW5rOmhyZWY9IiN1bmlvbiIgdHJhbnNmb3JtPSJtYXRyaXgoNjUwIDAgMCA2NTAgMjQ3IDE3NSkiLz4NCjwvc3ZnPg==');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjM1IDY1MCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KPGRlZnM+DQo8ZyBpZD0idW5pb24iPg0KPHVzZSB5PSItLjIxNiIgeGxpbms6aHJlZj0iI3g0Ii8+DQo8dXNlIHhsaW5rOmhyZWY9IiN4NCIvPg0KPHVzZSB5PSIuMjE2IiB4bGluazpocmVmPSIjczYiLz4NCjwvZz4NCjxnIGlkPSJ4NCI+DQo8dXNlIHhsaW5rOmhyZWY9IiNzNiIvPg0KPHVzZSB5PSIuMDU0IiB4bGluazpocmVmPSIjczUiLz4NCjx1c2UgeT0iLjEwOCIgeGxpbms6aHJlZj0iI3M2Ii8+DQo8dXNlIHk9Ii4xNjIiIHhsaW5rOmhyZWY9IiNzNSIvPg0KPC9nPg0KPGcgaWQ9InM1Ij4NCjx1c2UgeD0iLS4yNTIiIHhsaW5rOmhyZWY9IiNzdGFyIi8+DQo8dXNlIHg9Ii0uMTI2IiB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4PSIuMTI2IiB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4PSIuMjUyIiB4bGluazpocmVmPSIjc3RhciIvPg0KPC9nPg0KPGcgaWQ9InM2Ij4NCjx1c2UgeD0iLS4wNjMiIHhsaW5rOmhyZWY9IiNzNSIvPg0KPHVzZSB4PSIuMzE1IiB4bGluazpocmVmPSIjc3RhciIvPg0KPC9nPg0KPGcgaWQ9InN0YXIiPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0ibWF0cml4KC0uODA5MDIgLS41ODc3OSAuNTg3NzkgLS44MDkwMiAwIDApIi8+DQo8dXNlIHhsaW5rOmhyZWY9IiNwdCIgdHJhbnNmb3JtPSJtYXRyaXgoLjMwOTAyIC0uOTUxMDYgLjk1MTA2IC4zMDkwMiAwIDApIi8+DQo8dXNlIHhsaW5rOmhyZWY9IiNwdCIvPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0icm90YXRlKDE0NCkiLz4NCjwvZz4NCjxwYXRoIGZpbGw9IiNmZmYiIGlkPSJwdCIgZD0iTS0uMTYyNSwwIDAtLjUgLjE2MjUsMHoiIHRyYW5zZm9ybT0ic2NhbGUoLjA2MTYpIi8+DQo8cGF0aCBmaWxsPSIjYmYwYTMwIiBpZD0ic3RyaXBlIiBkPSJtMCwwaC0xMjM1djUwaC0xMjM1eiIvPg0KPC9kZWZzPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGgtMTIzNXY2NTBoLTEyMzV6Ii8+DQo8dXNlIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjx1c2UgeT0iMTAwIiB4bGluazpocmVmPSIjc3RyaXBlIi8+DQo8dXNlIHk9IjIwMCIgeGxpbms6aHJlZj0iI3N0cmlwZSIvPg0KPHVzZSB5PSIzMDAiIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjx1c2UgeT0iNDAwIiB4bGluazpocmVmPSIjc3RyaXBlIi8+DQo8dXNlIHk9IjUwMCIgeGxpbms6aHJlZj0iI3N0cmlwZSIvPg0KPHVzZSB5PSI2MDAiIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjxwYXRoIGZpbGw9IiMwMDI4NjgiIGQ9Im0wLDBoNDk0djM1MGgtNDk0eiIvPg0KPHVzZSB4bGluazpocmVmPSIjdW5pb24iIHRyYW5zZm9ybT0ibWF0cml4KDY1MCAwIDAgNjUwIDI0NyAxNzUpIi8+DQo8L3N2Zz4=');
 }
 
 .flag-it {
@@ -66,6 +66,7 @@ body {
     border: none;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .card-header {
@@ -185,6 +186,66 @@ body {
     transform: translateY(-5px);
 }
 
+/* Task Manager Styles */
+#task-manager-section {
+    margin-top: 2rem;
+}
+
+.task-item {
+    background-color: var(--bs-gray-700);
+    border-radius: 6px;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+
+.task-item:hover {
+    background-color: var(--bs-gray-600);
+    transform: translateX(5px);
+}
+
+.task-item .task-text {
+    flex-grow: 1;
+}
+
+.task-item .task-actions {
+    display: flex;
+}
+
+.task-item .task-actions button {
+    margin-left: 8px;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.task-form {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.task-form input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.priority-high {
+    border-left: 4px solid var(--bs-danger);
+}
+
+.priority-medium {
+    border-left: 4px solid var(--bs-warning);
+}
+
+.priority-low {
+    border-left: 4px solid var(--bs-success);
+}
+
 /* Media queries */
 @media (max-width: 768px) {
     .card-header {
@@ -192,6 +253,13 @@ body {
     }
     .card-body {
         padding: 1.25rem;
+    }
+    .task-form {
+        flex-direction: column;
+    }
+    .task-form input {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
     </style>
@@ -222,6 +290,12 @@ body {
                         <a class="nav-link" href="#saved-schedules" id="nav-saved">
                             <i class="fas fa-list me-1"></i> 
                             <span id="saved-schedules-nav">Saved Schedules</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#task-manager" id="nav-tasks">
+                            <i class="fas fa-tasks me-1"></i> 
+                            <span id="task-manager-nav">Task Manager</span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -344,6 +418,41 @@ body {
                 </div>
             </div>
         </div>
+
+        <!-- Task Manager Section -->
+        <div id="task-manager-section" class="d-none">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card animate-fade-in">
+                        <div class="card-header">
+                            <h2 class="mb-0" id="task-manager-title">Task Manager</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="task-form">
+                                <input type="text" class="form-control" id="task-input" placeholder="Enter a new task">
+                                <select class="form-select me-2 w-auto" id="task-priority">
+                                    <option value="low">Low Priority</option>
+                                    <option value="medium" selected>Medium Priority</option>
+                                    <option value="high">High Priority</option>
+                                </select>
+                                <button class="btn btn-primary" id="add-task">
+                                    <i class="fas fa-plus me-1"></i> <span id="add-task-text">Add Task</span>
+                                </button>
+                            </div>
+                            
+                            <div id="task-list">
+                                <!-- Tasks will be added here dynamically -->
+                                <div id="no-tasks" class="text-center py-4">
+                                    <i class="fas fa-tasks fa-3x mb-3 text-muted"></i>
+                                    <h5 id="no-tasks-text">No tasks yet</h5>
+                                    <p id="add-first-task-text">Add your first task above.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap JavaScript -->
@@ -357,6 +466,7 @@ const TRANSLATIONS = {
         "app_name": "Daily Schedule Planner",
         "new_schedule": "New Schedule",
         "saved_schedules": "Saved Schedules",
+        "task_manager": "Task Manager",
         "create_schedule": "Create Your Daily Schedule",
         "work_shift": "Enter your work shift hours:",
         "work_shift_placeholder": "E.g. 8:00 AM - 5:00 PM",
@@ -385,6 +495,18 @@ const TRANSLATIONS = {
         "create_new": "Create New Schedule",
         "connection_error": "A connection error occurred. Please try again later.",
         "error_during_saving": "An error occurred during saving.",
+        "task_manager_title": "Task Manager",
+        "add_task": "Add Task",
+        "enter_task": "Enter a new task",
+        "no_tasks": "No tasks yet",
+        "add_first_task": "Add your first task above.",
+        "mark_complete": "Mark Complete",
+        "mark_incomplete": "Mark Incomplete",
+        "delete_task": "Delete",
+        "task_empty": "Please enter a task description.",
+        "low_priority": "Low Priority",
+        "medium_priority": "Medium Priority", 
+        "high_priority": "High Priority",
         // Activities
         "activities": [
             "Wake up",
@@ -417,6 +539,7 @@ const TRANSLATIONS = {
         "app_name": "Pianificatore Giornaliero",
         "new_schedule": "Nuovo Programma",
         "saved_schedules": "Programmi Salvati",
+        "task_manager": "Gestione Attività",
         "create_schedule": "Compila il tuo programma giornaliero",
         "work_shift": "Inserisci l'orario del tuo turno di lavoro:",
         "work_shift_placeholder": "Es. 8:00 - 17:00",
@@ -445,6 +568,18 @@ const TRANSLATIONS = {
         "create_new": "Crea nuovo programma",
         "connection_error": "Si è verificato un errore di connessione. Riprova più tardi.",
         "error_during_saving": "Si è verificato un errore durante il salvataggio.",
+        "task_manager_title": "Gestione Attività",
+        "add_task": "Aggiungi Attività",
+        "enter_task": "Inserisci una nuova attività",
+        "no_tasks": "Nessuna attività ancora",
+        "add_first_task": "Aggiungi la tua prima attività sopra.",
+        "mark_complete": "Segna Completata",
+        "mark_incomplete": "Segna Incompleta",
+        "delete_task": "Elimina",
+        "task_empty": "Inserisci una descrizione dell'attività.",
+        "low_priority": "Priorità Bassa",
+        "medium_priority": "Priorità Media", 
+        "high_priority": "Priorità Alta",
         // Activities
         "activities": [
             "Sveglia",
@@ -477,6 +612,7 @@ const TRANSLATIONS = {
         "app_name": "Tagesplaner",
         "new_schedule": "Neuer Zeitplan",
         "saved_schedules": "Gespeicherte Zeitpläne",
+        "task_manager": "Aufgabenmanager",
         "create_schedule": "Erstellen Sie Ihren Tagesplan",
         "work_shift": "Geben Sie Ihre Arbeitszeiten ein:",
         "work_shift_placeholder": "z.B. 8:00 - 17:00 Uhr",
@@ -505,6 +641,18 @@ const TRANSLATIONS = {
         "create_new": "Neuen Zeitplan erstellen",
         "connection_error": "Ein Verbindungsfehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
         "error_during_saving": "Beim Speichern ist ein Fehler aufgetreten.",
+        "task_manager_title": "Aufgabenmanager",
+        "add_task": "Aufgabe hinzufügen",
+        "enter_task": "Neue Aufgabe eingeben",
+        "no_tasks": "Noch keine Aufgaben",
+        "add_first_task": "Fügen Sie Ihre erste Aufgabe oben hinzu.",
+        "mark_complete": "Als erledigt markieren",
+        "mark_incomplete": "Als unerledigt markieren",
+        "delete_task": "Löschen",
+        "task_empty": "Bitte geben Sie eine Aufgabenbeschreibung ein.",
+        "low_priority": "Niedrige Priorität",
+        "medium_priority": "Mittlere Priorität", 
+        "high_priority": "Hohe Priorität",
         // Activities
         "activities": [
             "Aufwachen",
@@ -537,6 +685,7 @@ const TRANSLATIONS = {
         "app_name": "Planificador Diario",
         "new_schedule": "Nuevo Horario",
         "saved_schedules": "Horarios Guardados",
+        "task_manager": "Gestor de Tareas",
         "create_schedule": "Crea tu horario diario",
         "work_shift": "Ingresa tu horario de trabajo:",
         "work_shift_placeholder": "Ej. 8:00 - 17:00",
@@ -565,6 +714,18 @@ const TRANSLATIONS = {
         "create_new": "Crear Nuevo Horario",
         "connection_error": "Ocurrió un error de conexión. Por favor intenta más tarde.",
         "error_during_saving": "Ocurrió un error durante el guardado.",
+        "task_manager_title": "Gestor de Tareas",
+        "add_task": "Añadir Tarea",
+        "enter_task": "Introduce una nueva tarea",
+        "no_tasks": "No hay tareas aún",
+        "add_first_task": "Añade tu primera tarea arriba.",
+        "mark_complete": "Marcar Completada",
+        "mark_incomplete": "Marcar Incompleta",
+        "delete_task": "Eliminar",
+        "task_empty": "Por favor ingresa una descripción de la tarea.",
+        "low_priority": "Prioridad Baja",
+        "medium_priority": "Prioridad Media", 
+        "high_priority": "Prioridad Alta",
         // Activities
         "activities": [
             "Despertar",
@@ -597,6 +758,7 @@ const TRANSLATIONS = {
         "app_name": "Planejador Diário",
         "new_schedule": "Nova Programação",
         "saved_schedules": "Programações Salvas",
+        "task_manager": "Gerenciador de Tarefas",
         "create_schedule": "Crie sua programação diária",
         "work_shift": "Insira seu horário de trabalho:",
         "work_shift_placeholder": "Ex. 8:00 - 17:00",
@@ -625,6 +787,18 @@ const TRANSLATIONS = {
         "create_new": "Criar Nova Programação",
         "connection_error": "Ocorreu um erro de conexão. Por favor, tente novamente mais tarde.",
         "error_during_saving": "Ocorreu um erro durante o salvamento.",
+        "task_manager_title": "Gerenciador de Tarefas",
+        "add_task": "Adicionar Tarefa",
+        "enter_task": "Digite uma nova tarefa",
+        "no_tasks": "Nenhuma tarefa ainda",
+        "add_first_task": "Adicione sua primeira tarefa acima.",
+        "mark_complete": "Marcar como Concluída",
+        "mark_incomplete": "Marcar como Não Concluída",
+        "delete_task": "Excluir",
+        "task_empty": "Por favor, insira uma descrição da tarefa.",
+        "low_priority": "Prioridade Baixa",
+        "medium_priority": "Prioridade Média", 
+        "high_priority": "Prioridade Alta",
         // Activities
         "activities": [
             "Acordar",
@@ -894,6 +1068,7 @@ function getScheduleAdvice(activities, workShift, lang = 'en') {
 // Global state
 let currentLanguage = 'en';
 const savedSchedules = [];
+const savedTasks = [];
 
 // Initialize app when document is ready
 document.addEventListener('DOMContentLoaded', function() {
@@ -920,6 +1095,12 @@ document.addEventListener('DOMContentLoaded', function() {
         loadSavedSchedules();
     });
     
+    document.getElementById('nav-tasks').addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection('task-manager-section');
+        loadTasks();
+    });
+    
     // Setup additional buttons
     document.getElementById('create-new-btn').addEventListener('click', function() {
         showSection('new-schedule-section');
@@ -939,6 +1120,19 @@ document.addEventListener('DOMContentLoaded', function() {
         saveSchedule(event);
     });
     
+    // Setup task manager
+    document.getElementById('add-task').addEventListener('click', function() {
+        addTask();
+    });
+    
+    // Enter key for task input
+    document.getElementById('task-input').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            addTask();
+        }
+    });
+    
     // Initialize activity dropdown
     updateActivityDropdowns();
     
@@ -948,8 +1142,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (firstTimeInput) firstTimeInput.required = true;
     if (firstActivitySelect) firstActivitySelect.required = true;
     
-    // Load any existing schedules
+    // Load existing data
     loadSavedSchedules();
+    loadTasks();
 });
 
 function getCurrentLanguage() {
@@ -981,6 +1176,7 @@ function setLanguage(lang) {
     document.getElementById('app-name').innerHTML = `<i class="fas fa-calendar-alt me-2"></i> <span class="text-gradient">${getTranslation('app_name', lang)}</span>`;
     document.getElementById('new-schedule').textContent = getTranslation('new_schedule', lang);
     document.getElementById('saved-schedules-nav').textContent = getTranslation('saved_schedules', lang);
+    document.getElementById('task-manager-nav').textContent = getTranslation('task_manager', lang);
     document.getElementById('create-schedule').textContent = getTranslation('create_schedule', lang);
     document.getElementById('work-shift-label').textContent = getTranslation('work_shift', lang);
     document.getElementById('work_shift').placeholder = getTranslation('work_shift_placeholder', lang);
@@ -992,6 +1188,11 @@ function setLanguage(lang) {
     document.getElementById('no-schedules-text').textContent = getTranslation('no_schedules', lang);
     document.getElementById('create-first').textContent = getTranslation('create_first', lang);
     document.getElementById('create-new-btn-text').textContent = getTranslation('create_new', lang);
+    document.getElementById('task-manager-title').textContent = getTranslation('task_manager_title', lang);
+    document.getElementById('task-input').placeholder = getTranslation('enter_task', lang);
+    document.getElementById('add-task-text').textContent = getTranslation('add_task', lang);
+    document.getElementById('no-tasks-text').textContent = getTranslation('no_tasks', lang);
+    document.getElementById('add-first-task-text').textContent = getTranslation('add_first_task', lang);
     
     // Update placeholders
     document.querySelectorAll('.time-input').forEach(input => {
@@ -1005,11 +1206,29 @@ function setLanguage(lang) {
         }
     });
     
+    // Update priority options
+    const prioritySelect = document.getElementById('task-priority');
+    if (prioritySelect) {
+        const options = prioritySelect.querySelectorAll('option');
+        options.forEach(option => {
+            if (option.value === 'low') {
+                option.textContent = getTranslation('low_priority', lang);
+            } else if (option.value === 'medium') {
+                option.textContent = getTranslation('medium_priority', lang);
+            } else if (option.value === 'high') {
+                option.textContent = getTranslation('high_priority', lang);
+            }
+        });
+    }
+    
     // Update activities in dropdowns
     updateActivityDropdowns();
     
     // Update saved schedules display
     updateSchedulesDisplay();
+    
+    // Update tasks display
+    updateTasksDisplay();
 }
 
 function updateActivityDropdowns() {
@@ -1045,17 +1264,21 @@ function updateActivityDropdowns() {
 function showSection(sectionId) {
     document.getElementById('new-schedule-section').classList.add('d-none');
     document.getElementById('saved-schedules-section').classList.add('d-none');
+    document.getElementById('task-manager-section').classList.add('d-none');
     
     document.getElementById(sectionId).classList.remove('d-none');
     
     // Update navigation active state
     document.getElementById('nav-new').classList.remove('active');
     document.getElementById('nav-saved').classList.remove('active');
+    document.getElementById('nav-tasks').classList.remove('active');
     
     if (sectionId === 'new-schedule-section') {
         document.getElementById('nav-new').classList.add('active');
-    } else {
+    } else if (sectionId === 'saved-schedules-section') {
         document.getElementById('nav-saved').classList.add('active');
+    } else if (sectionId === 'task-manager-section') {
+        document.getElementById('nav-tasks').classList.add('active');
     }
 }
 
@@ -1400,6 +1623,171 @@ function deleteSchedule(scheduleId) {
     
     // Update display
     updateSchedulesDisplay();
+}
+
+// Task Manager Functions
+
+function addTask() {
+    const taskInput = document.getElementById('task-input');
+    const taskText = taskInput.value.trim();
+    const prioritySelect = document.getElementById('task-priority');
+    const priority = prioritySelect.value;
+    
+    if (taskText === '') {
+        alert(getTranslation('task_empty', currentLanguage));
+        return;
+    }
+    
+    // Create task object
+    const task = {
+        id: Date.now().toString(),
+        text: taskText,
+        priority: priority,
+        completed: false,
+        createdAt: new Date().toISOString()
+    };
+    
+    // Add to array and save
+    savedTasks.push(task);
+    saveTasks();
+    
+    // Clear input
+    taskInput.value = '';
+    
+    // Update display
+    updateTasksDisplay();
+}
+
+function toggleTaskCompletion(taskId) {
+    const task = savedTasks.find(t => t.id === taskId);
+    if (task) {
+        task.completed = !task.completed;
+        saveTasks();
+        updateTasksDisplay();
+    }
+}
+
+function deleteTask(taskId) {
+    const index = savedTasks.findIndex(t => t.id === taskId);
+    if (index !== -1) {
+        savedTasks.splice(index, 1);
+        saveTasks();
+        updateTasksDisplay();
+    }
+}
+
+function saveTasks() {
+    try {
+        localStorage.setItem('savedTasks', JSON.stringify(savedTasks));
+    } catch (e) {
+        console.error('Error saving tasks to storage:', e);
+    }
+}
+
+function loadTasks() {
+    // Clear existing array
+    savedTasks.length = 0;
+    
+    // Load from localStorage
+    try {
+        const stored = localStorage.getItem('savedTasks');
+        if (stored) {
+            const tasks = JSON.parse(stored);
+            savedTasks.push(...tasks);
+        }
+    } catch (e) {
+        console.error('Error loading tasks from storage:', e);
+    }
+    
+    // Update the display
+    updateTasksDisplay();
+}
+
+function updateTasksDisplay() {
+    const container = document.getElementById('task-list');
+    const noTasksMessage = document.getElementById('no-tasks');
+    
+    // Show/hide no tasks message
+    if (savedTasks.length === 0) {
+        if (noTasksMessage) noTasksMessage.classList.remove('d-none');
+        
+        // Clear container except for no tasks message
+        const children = Array.from(container.children);
+        for (const child of children) {
+            if (child.id !== 'no-tasks') {
+                container.removeChild(child);
+            }
+        }
+        
+        return;
+    }
+    
+    // Hide no tasks message
+    if (noTasksMessage) noTasksMessage.classList.add('d-none');
+    
+    // Clear container except for no tasks message
+    const children = Array.from(container.children);
+    for (const child of children) {
+        if (child.id !== 'no-tasks') {
+            container.removeChild(child);
+        }
+    }
+    
+    // Sort tasks: completed tasks at the bottom, then by priority (high to low)
+    const sortedTasks = [...savedTasks].sort((a, b) => {
+        if (a.completed !== b.completed) return a.completed ? 1 : -1;
+        
+        const priorityOrder = {high: 0, medium: 1, low: 2};
+        return priorityOrder[a.priority] - priorityOrder[b.priority];
+    });
+    
+    // Add each task
+    sortedTasks.forEach(task => {
+        const taskItem = document.createElement('div');
+        taskItem.className = `task-item animate-fade-in priority-${task.priority}`;
+        if (task.completed) {
+            taskItem.classList.add('completed');
+        }
+        taskItem.dataset.id = task.id;
+        
+        // Get translated button text
+        const toggleBtnText = task.completed 
+            ? getTranslation('mark_incomplete', currentLanguage)
+            : getTranslation('mark_complete', currentLanguage);
+        
+        const toggleBtnIcon = task.completed
+            ? 'fa-times-circle'
+            : 'fa-check-circle';
+        
+        const toggleBtnClass = task.completed
+            ? 'btn-outline-warning'
+            : 'btn-outline-success';
+        
+        taskItem.innerHTML = `
+            <div class="task-text">${task.text}</div>
+            <div class="task-actions">
+                <button class="btn btn-sm ${toggleBtnClass} toggle-task-btn">
+                    <i class="fas ${toggleBtnIcon} me-1"></i> ${toggleBtnText}
+                </button>
+                <button class="btn btn-sm btn-outline-danger delete-task-btn">
+                    <i class="fas fa-trash-alt me-1"></i> ${getTranslation('delete_task', currentLanguage)}
+                </button>
+            </div>
+        `;
+        
+        container.appendChild(taskItem);
+        
+        // Add event listeners
+        const toggleBtn = taskItem.querySelector('.toggle-task-btn');
+        toggleBtn.addEventListener('click', function() {
+            toggleTaskCompletion(task.id);
+        });
+        
+        const deleteBtn = taskItem.querySelector('.delete-task-btn');
+        deleteBtn.addEventListener('click', function() {
+            deleteTask(task.id);
+        });
+    });
 }
     </script>
 </body>
