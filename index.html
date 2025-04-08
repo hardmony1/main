@@ -1156,14 +1156,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Setup add activity button
     const addActivityBtn = document.getElementById('add-activity');
     console.log('Add Activity button:', addActivityBtn);
-    if (addActivityBtn) {
-        addActivityBtn.addEventListener('click', function() {
-            console.log('Add activity button clicked via event listener');
+    
+    // Using a direct reference approach similar to the example code
+    addActivityBtn.addEventListener('click', function() {
+        console.log('Add activity button clicked with improved implementation');
+        const taskText = 'New activity added'; // Just for logging
+        if (taskText) {
             addActivityRow();
-        });
-    } else {
-        console.error('Add Activity button not found in the DOM');
-    }
+        }
+    });
     
     // Setup form submission
     document.getElementById('schedule-form').addEventListener('submit', function(event) {
