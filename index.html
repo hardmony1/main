@@ -21,27 +21,70 @@ body {
 
 /* Navbar styling */
 .navbar {
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(15, 20, 25, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .navbar-brand {
     font-weight: 600;
 }
 
+/* Enhanced navigation links - better visibility */
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    color: #ffffff !important;
+    background-color: rgba(var(--bs-primary-rgb), 0.3);
+    border-radius: 6px;
+}
+
+.nav-link i {
+    color: rgba(var(--bs-info-rgb), 1);
+    margin-right: 8px;
+}
+
+.nav-link:hover i {
+    color: #ffffff;
+}
+
+.dropdown-item.language-option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.dropdown-item.language-option:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
 /* Flag icons for language selector */
 .flag-icon {
-    width: 20px;
-    height: 15px;
+    width: 24px;
+    height: 18px;
     display: inline-block;
     margin-right: 0.5rem;
     background-size: cover;
     vertical-align: middle;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .flag-en {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjM1IDY1MCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KPGRlZnM+DQo8ZyBpZD0idW5pb24iPg0KPHVzZSB5PSItLjIxNiIgeGxpbms6aHJlZj0iI3g0Ii8+DQo8dXNlIHhsaW5rOmhyZWY9IiN4NCIvPg0KPHVzZSB5PSIuMjE2IiB4bGluazpocmVmPSIjczYiLz4NCjwvZz4NCjxnIGlkPSJ4NCI+DQo8dXNlIHhsaW5rOmhyZWY9IiNzNiIvPg0KPHVzZSB5PSIuMDU0IiB4bGluazpocmVmPSIjczUiLz4NCjx1c2UgeT0iLjEwOCIgeGxpbms6aHJlZj0iI3M2Ii8+DQo8dXNlIHk9Ii4xNjIiIHhsaW5rOmhyZWY9IiNzNSIvPg0KPC9nPg0KPGcgaWQ9InM1Ij4NCjx1c2UgeD0iLS4yNTIiIHhsaW5rOmhyZWY9IiNzdGFyIi8+DQo8dXNlIHg9Ii0uMTI2IiB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4PSIuMTI2IiB4bGluazpocmVmPSIjc3RhciIvPg0KPHVzZSB4PSIuMjUyIiB4bGluazpocmVmPSIjc3RhciIvPg0KPC9nPg0KPGcgaWQ9InM2Ij4NCjx1c2UgeD0iLS4wNjMiIHhsaW5rOmhyZWY9IiNzNSIvPg0KPHVzZSB4PSIuMzE1IiB4bGluazpocmVmPSIjc3RhciIvPg0KPC9nPg0KPGcgaWQ9InN0YXIiPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0ibWF0cml4KC0uODA5MDIgLS41ODc3OSAuNTg3NzkgLS44MDkwMiAwIDApIi8+DQo8dXNlIHhsaW5rOmhyZWY9IiNwdCIgdHJhbnNmb3JtPSJtYXRyaXgoLjMwOTAyIC0uOTUxMDYgLjk1MTA2IC4zMDkwMiAwIDApIi8+DQo8dXNlIHhsaW5rOmhyZWY9IiNwdCIvPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPHVzZSB4bGluazpocmVmPSIjcHQiIHRyYW5zZm9ybT0icm90YXRlKDE0NCkiLz4NCjwvZz4NCjxwYXRoIGZpbGw9IiNmZmYiIGlkPSJwdCIgZD0iTS0uMTYyNSwwIDAtLjUgLjE2MjUsMHoiIHRyYW5zZm9ybT0ic2NhbGUoLjA2MTYpIi8+DQo8cGF0aCBmaWxsPSIjYmYwYTMwIiBpZD0ic3RyaXBlIiBkPSJtMCwwaC0xMjM1djUwaC0xMjM1eiIvPg0KPC9kZWZzPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGgtMTIzNXY2NTBoLTEyMzV6Ii8+DQo8dXNlIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjx1c2UgeT0iMTAwIiB4bGluazpocmVmPSIjc3RyaXBlIi8+DQo8dXNlIHk9IjIwMCIgeGxpbms6aHJlZj0iI3N0cmlwZSIvPg0KPHVzZSB5PSIzMDAiIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjx1c2UgeT0iNDAwIiB4bGluazpocmVmPSIjc3RyaXBlIi8+DQo8dXNlIHk9IjUwMCIgeGxpbms6aHJlZj0iI3N0cmlwZSIvPg0KPHVzZSB5PSI2MDAiIHhsaW5rOmhyZWY9IiNzdHJpcGUiLz4NCjxwYXRoIGZpbGw9IiMwMDI4NjgiIGQ9Im0wLDBoNDk0djM1MGgtNDk0eiIvPg0KPHVzZSB4bGluazpocmVmPSIjdW5pb24iIHRyYW5zZm9ybT0ibWF0cml4KDY1MCAwIDAgNjUwIDI0NyAxNzUpIi8+DQo8L3N2Zz4=');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMiA2Ij4NCjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0wLDBoMTJ2NmgtMTJ6Ii8+DQo8cGF0aCBzdHJva2U9IiNjZjE0MmIiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTAsMGwxMiw2bS0xMiwwbDEyLC02Ii8+DQo8cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTYsMHYzIi8+DQo8cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTAsMzNoMTIiLz4NCjxwYXRoIHN0cm9rZT0iI2NmMTQyYiIgc3Ryb2tlLXdpZHRoPSIxIiBkPSJtMCwwdjZoMTJ2LTZ6bTYsMHY2bS02LC0zaDEyIi8+DQo8L3N2Zz4=');
 }
 
 .flag-it {
@@ -57,7 +100,7 @@ body {
 }
 
 .flag-pt {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTAwIDYwMCI+DQo8cGF0aCBmaWxsPSIjZmYwMDAwIiBkPSJtMCwwaC45MDB2LjYwMGgtLjkwMHoiLz4NCjxwYXRoIGZpbGw9IiMwMDY2MzMiIGQ9Im0wLDBoLjM0NXYuNjAwaC0uMzQ1eiIvPg0KPGcgZmlsbD0iI2ZmMDAwMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLjE3MjUsLjMwMCkiPg0KPGcgaWQ9InI0Ij4NCjxnIGlkPSJyMiI+DQo8ZyBpZD0icjEiPg0KPHBhdGggaWQ9InIwIiBkPSJtMCwwaC0uMDIxMjV2LS4wMDcwOWgtLjA0MzM3aDAuMDIxMjVjLTAuMDU0ODMsMC0wLjA5OTM3LDAuMDQ0NTQtMC4wOTkzNywwLjA5OTM3aDAgMC0wLjAyMTI1YzAsMC4wNTQ4MywwLjA0NDU0LDAuMDk5MzcsMC4wOTkzNywwLjA5OTM3aDAuMDIxMjV2LTAuMDYyNzV6Ii8+DQo8dXNlIHhsaW5rOmhyZWY9IiNyMCIgdHJhbnNmb3JtPSJzY2FsZSgtMSw5KSIvPg0KPC9nPg0KPHVzZSB4bGluazpocmVmPSIjcjEiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPC9nPg0KPHVzZSB4bGluazpocmVmPSIjcjIiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPC9nPg0KPHVzZSB4bGluazpocmVmPSIjcjQiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPC9nPg0KPC9zdmc+');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzAwIj4NCjxwYXRoIGZpbGw9IiMwMDY2MzMiIGQ9Im0wLDBoMjQwdjMwMGgtMjQweiIvPg0KPHBhdGggZmlsbD0iI2ZmMDAwMCIgZD0ibTI0MCwwaDM2MHYzMDBoLTM2MHoiLz4NCjxnIGZpbGw9IiNmY2RmMDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI0MCwxNTApIj4NCjxnIGlkPSJlIj4NCjxnIGlkPSJkIj4NCjxnIGlkPSJjIj4NCjxnIGlkPSJiIj4NCjxwYXRoIGlkPSJhIiBkPSJtMCwwdjE1aC02di0xNXoiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDAsMCkiLz4NCjx1c2UgeGxpbms6aHJlZj0iI2EiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPC9nPg0KPHVzZSB4bGluazpocmVmPSIjYiIgdHJhbnNmb3JtPSJyb3RhdGUoNzIpIi8+DQo8L2c+DQo8dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09InJvdGF0ZSg3MikiLz4NCjwvZz4NCjx1c2UgeGxpbms6aHJlZj0iI2QiIHRyYW5zZm9ybT0icm90YXRlKDcyKSIvPg0KPC9nPg0KPGcgZmlsbD0iI2ZmZiI+DQo8Y2lyY2xlIHI9IjI1Ii8+DQo8Y2lyY2xlIHI9IjIwIiBmaWxsPSIjMDA2NmNjIi8+DQo8Y2lyY2xlIHI9IjEwIi8+DQo8cGF0aCBkPSJtLTIwLDBjMCwtMTBoMTB2MjBoLTEwYzAtMTAgMTAtMTUgMTAtMjAiIGZpbGw9IiMwMDY2Y2MiLz4NCjwvZz4NCjwvZz4NCjwvc3ZnPg==');
 }
 
 /* Card styling */
@@ -82,7 +125,7 @@ body {
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, var(--bs-info), var(--bs-primary));
+    background: linear-gradient(90deg, #5ee7df, #b490ca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -272,7 +315,7 @@ body {
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#" id="app-name">
-                <i class="fas fa-calendar-alt me-2"></i> 
+                <i class="fas fa-calendar-alt me-2" style="color: #ffffff; font-size: 1.5rem; text-shadow: 0 0 10px #5ee7df, 0 0 20px #5ee7df;"></i> 
                 <span class="text-gradient">Daily Schedule Planner</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -282,25 +325,25 @@ body {
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="#" id="nav-new">
-                            <i class="fas fa-plus-circle me-1"></i> 
+                            <i class="fas fa-plus-circle" style="color: #ffffff; font-size: 1.2rem; text-shadow: 0 0 5px #5ee7df;"></i> 
                             <span id="new-schedule">New Schedule</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#saved-schedules" id="nav-saved">
-                            <i class="fas fa-list me-1"></i> 
+                            <i class="fas fa-list" style="color: #ffffff; font-size: 1.2rem; text-shadow: 0 0 5px #5ee7df;"></i> 
                             <span id="saved-schedules-nav">Saved Schedules</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#task-manager" id="nav-tasks">
-                            <i class="fas fa-tasks me-1"></i> 
+                            <i class="fas fa-tasks" style="color: #ffffff; font-size: 1.2rem; text-shadow: 0 0 5px #5ee7df;"></i> 
                             <span id="task-manager-nav">Task Manager</span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="fas fa-globe me-1"></i> Language
+                            <i class="fas fa-globe" style="color: #ffffff; font-size: 1.2rem; text-shadow: 0 0 5px #5ee7df;"></i> Language
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
@@ -1173,7 +1216,7 @@ function setLanguage(lang) {
     localStorage.setItem('scheduleLanguage', lang);
     
     // Update page content
-    document.getElementById('app-name').innerHTML = `<i class="fas fa-calendar-alt me-2"></i> <span class="text-gradient">${getTranslation('app_name', lang)}</span>`;
+    document.getElementById('app-name').innerHTML = `<i class="fas fa-calendar-alt me-2" style="color: #ffffff; font-size: 1.5rem; text-shadow: 0 0 10px #5ee7df, 0 0 20px #5ee7df;"></i> <span class="text-gradient">${getTranslation('app_name', lang)}</span>`;
     document.getElementById('new-schedule').textContent = getTranslation('new_schedule', lang);
     document.getElementById('saved-schedules-nav').textContent = getTranslation('saved_schedules', lang);
     document.getElementById('task-manager-nav').textContent = getTranslation('task_manager', lang);
@@ -1540,8 +1583,13 @@ function updateSchedulesDisplay() {
     // Hide no schedules message and show schedules
     noSchedulesMessage.classList.add('d-none');
     
-    // Clear container
-    container.innerHTML = '';
+    // Clear container except for no schedules message
+    const children = Array.from(container.children);
+    for (const child of children) {
+        if (child.id !== 'no-schedules') {
+            container.removeChild(child);
+        }
+    }
     
     // Sort schedules by date (newest first)
     const sortedSchedules = [...savedSchedules].sort((a, b) => {
